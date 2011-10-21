@@ -1,0 +1,210 @@
+/**
+ * Котик, который улыбается из центра странички
+ *
+ * В старых браузерах он страшненький, но всё равно добрый.
+ *
+ * @package     Cat
+ * @version     1.0
+ * @author      Артём Голиков <art@futurecolors.ru>
+ * @copyright   Future Colors
+ */
+
+
+/**
+ * @section     Глобальные стили
+ */
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**
+ * @section     Позиционирование котика по центру страницы
+ */
+
+.b-stovebench {
+    text-align: center;
+    white-space: nowrap;
+}
+.b-stovebench__content {
+    display: inline-block;
+    padding: 2ex 1em;
+    text-align: left;
+    vertical-align: middle;
+    white-space: normal;
+}
+.b-stovebench__helper {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0px;
+}
+.ie67 .b-stovebench__content,
+.ie67 .b-stovebench__helper {
+    zoom: 1;
+    display: inline;
+}
+
+
+/**
+ * @section     Котик
+ */
+
+.b-cat {
+    display: block;
+    width: 20em;
+}
+.b-cat__face {
+    position: relative;
+    display: block;
+    margin-top: -10ex;
+    width: 20em;
+    height: 20em;
+    -webkit-border-radius: 10em;
+       -moz-border-radius: 10em;
+         -o-border-radius: 10em;
+            border-radius: 10em;
+    background: #ee0;
+}
+
+
+/**
+ * @subsection  Ушки
+ */
+
+.b-cat-ears {
+    display: block;
+    height: 20ex;
+    text-align: center;
+}
+.b-cat-ears__item {
+    display: inline-block;
+    border-bottom: 20ex solid #990;
+    border-left: 3em solid transparent;
+    border-right: 3em solid transparent;
+}
+.ie6 .b-cat-ears__item {
+    border-color: #990;
+}
+.ie67 .b-cat-ears__item {
+    zoom: 1;
+    display: inline;
+}
+.l-cat-ears__left {
+    margin-right: 2em;
+}
+.l-cat-ears__right {
+    margin-left: 2em;
+}
+
+
+/**
+ * @subsection  Глазки
+ */
+
+.b-cat-eyes {
+    padding: 8ex 0px 3ex;
+    text-align: center;
+}
+.b-cat-eyes__item {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 1px solid #990;
+    -webkit-border-radius: 2em;
+       -moz-border-radius: 2em;
+         -o-border-radius: 2em;
+            border-radius: 2em;
+    background: #ffffe0;
+}
+.ie67 .b-cat-eyes__item {
+    zoom: 1;
+    display: inline;
+}
+.l-cat-eyes__left {
+    margin-right: 3em;
+}
+.l-cat-eyes__right {
+    margin-left: 3em;
+}
+.b-cat-eyes__item-pupil-top {
+    width: 0px;
+    margin: 0.5em auto 0px;
+    border-bottom: 1.5em solid #222;
+    border-left: 0.7ex solid transparent;
+    border-right: 0.7ex solid transparent;
+}
+.ie67 .b-cat-eyes__item-pupil-top {
+    margin-top: -0.7em;
+}
+.b-cat-eyes__item-pupil-bottom {
+    width: 0px;
+    margin: 0px auto;
+    border-top: 1.5em solid #222;
+    border-left: 0.7ex solid transparent;
+    border-right: 0.7ex solid transparent;
+}
+.ie6 .b-cat-eyes__item-pupil-top,
+.ie6 .b-cat-eyes__item-pupil-bottom {
+    border-color: #222;
+}
+
+
+/**
+ * @subsection  Носик
+ */
+
+.b-cat-nose {
+    width: 5em;
+    height: 2ex;
+    margin: 0px auto;
+    -webkit-border-radius: 1ex;
+       -moz-border-radius: 1ex;
+         -o-border-radius: 1ex;
+            border-radius: 1ex;
+    background: #222;
+}
+.ie6 .b-cat-nose {
+    width: 10em;
+    height: 2ex;
+    font-size: 50%;
+}
+
+
+/**
+ * @subsection  Мордочка
+ */
+
+.b-cat-mouth {}
+.b-cat-mouth__bridge {
+    width: 0.2em;
+    height: 6ex;
+    margin: 0px auto;
+    background: #222;
+}
+.b-cat-mouth__smile {
+    width: 8em;
+    height: 0.5ex;
+    margin: 0px auto;
+    -webkit-border-radius: 1ex;
+       -moz-border-radius: 1ex;
+         -o-border-radius: 1ex;
+            border-radius: 1ex;
+    background: #222;
+}
+.ie6 .b-cat-mouth__smile {
+    width: 35em;
+    font-size: 30%;
+}
+.b-cat-mouth__tongue {
+    width: 2em;
+    height: 4ex;
+    margin: 0px auto;
+    -webkit-border-radius: 0ex 0ex 1em 1em;
+       -moz-border-radius: 0ex 0ex 1em 1em;
+         -o-border-radius: 0ex 0ex 1em 1em;
+            border-radius: 0ex 0ex 1em 1em;
+    background: #f00;
+}
